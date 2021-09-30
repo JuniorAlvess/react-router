@@ -87,7 +87,7 @@ describe("<Link> anchor href", () => {
 
   test('<Link to="..">', () => {
     let renderer = createTestRenderer(
-      <Router initialEntries={["/inbox/messages"]}>
+      <Router initialEntries={["/inbox/messages/123"]}>
         <Routes>
           <Route path="inbox">
             <Route path="messages/:id" element={<Link to=".." />} />
